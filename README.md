@@ -1,7 +1,7 @@
 # kaziawsm.github.io
 own website
 
-link to the website: kaziawsm.github.io <a href="https://kaziawsm.github.io">kaziawsm.github.io</a>
+link to the website: <a href="https://kaziawsm.github.io">kaziawsm.github.io</a>
 
 
 Image from:
