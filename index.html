@@ -45,14 +45,78 @@ h3 {
   font: 20px "Lato", sans-serif;
   color: #111;
 }
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.button1 {
+  background-color: rgba(255, 255, 255, 0.50); 
+  color: black; 
+  border: 2px solid rgba(255, 255, 255);
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
 </style>
+
+<script>
+  var sites = [
+      'http://www.nature.com',
+      'http://www.theguardian.com',
+      'http://www.hbr.com',
+      'http://www.iffs.se/en/',
+      'http://www.technologyreview.com',
+      'https://youthedata.com/',
+      'https://revistaidees.cat/en/',
+      'https://www.humanbrainproject.eu/en/',
+      'https://www.kurzweilai.net/',
+      'https://www.gatesnotes.com/',
+      'https://openai.com/',
+      'https://deepmind.com/',
+      'https://www.youtube.com/watch?v=t8LD0iUYv80',
+      'https://aihub.cloud.google.com/',
+      'https://brave.com/de/',
+      'https://endel.io/'
+  ];
+
+  function randomSite() {
+      var i = parseInt(Math.random() * sites.length);
+      // location.href = sites[i];
+      window.open(sites[i], '_blank')
+  }
+</script>
+<!--
+  <a href="#" onclick="randomSite();">Random</a>
+-->
+
+
 </head>
-<body>
+</body>
 
 <div class="bgimg-1">
   <div class="caption">
     <span class="border">Welcome!</span><br>
-    <span class="border">I'm Markus and this is my first website</span>
+    <span class="border">I'm Markus and this is my first website</span><br>
+  
+
+    <button class="button button1" onclick="randomSite();" target='blank'>Entertain me!</button>
   </div>
 </div>
 
